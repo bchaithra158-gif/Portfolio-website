@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Alex Johnson – Frontend Developer & Computer Science Student. Personal portfolio showcasing projects, skills, and contact information." />
+  <title>Alex Johnson | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Alex Johnson home">
+        <span class="logo-circle">AJ</span>
+        <span class="logo-name">Alex<span>Johnson</span></span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false"
+        aria-controls="navMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="particles" id="particles" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-container">
+        <!-- Left content -->
+        <div class="hero-content">
+          <p class="hero-greeting fade-in-left">👋 Hello, I'm</p>
+          <h1 class="hero-name fade-in-left">Alex Johnson</h1>
+          <div class="hero-typewriter fade-in-left" aria-live="polite">
+            <span class="typewriter-text" id="typewriterText"></span><span class="cursor" aria-hidden="true">|</span>
+          </div>
+          <p class="hero-intro fade-in-left">
+            A passionate Computer Science student crafting elegant digital experiences. I turn ideas into reality
+            through clean code and creative design.
+          </p>
+          <div class="hero-cta fade-in-left">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-eye"></i> View My Work
+            </a>
+            <a href="#" class="btn btn-secondary" download aria-label="Download CV (placeholder)">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: profile card -->
+        <div class="hero-visual fade-in-right" aria-label="Profile illustration">
+          <div class="profile-ring">
+            <div class="profile-card">
+              <div class="profile-avatar">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="50" cy="35" r="18" fill="rgba(255,255,255,0.3)" />
+                  <ellipse cx="50" cy="80" rx="28" ry="20" fill="rgba(255,255,255,0.3)" />
+                </svg>
+                <span class="avatar-initials">AJ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating badges -->
+          <div class="badge badge-exp float-anim" aria-label="Experience: 1+ Year">
+            <i class="fas fa-star"></i>
+            <div>
+              <strong>1+ Year</strong>
+              <small>Experience</small>
+            </div>
+          </div>
+          <div class="badge badge-proj float-anim-delay" aria-label="Projects: 10+">
+            <i class="fas fa-code"></i>
+            <div>
+              <strong>10+</strong>
+              <small>Projects</small>
+            </div>
+          </div>
+          <div class="badge badge-tech float-anim" aria-label="Technologies: 8+">
+            <i class="fas fa-layer-group"></i>
+            <div>
+              <strong>8+</strong>
+              <small>Technologies</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+        <span></span>
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         ABOUT SECTION
+    ============================================================ -->
+    <section id="about" class="about" aria-label="About me">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <h2>About <span class="gradient-text">Me</span></h2>
+          <div class="heading-line"></div>
+          <p class="section-subtitle">Get to know who I am</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: image -->
+          <div class="about-image fade-in-left">
+            <div class="image-ring">
+              <div class="image-inner">
+                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  class="about-svg">
+                  <circle cx="100" cy="70" r="38" fill="rgba(102,126,234,0.4)" />
+                  <ellipse cx="100" cy="160" rx="60" ry="42" fill="rgba(102,126,234,0.4)" />
+                </svg>
+                <span class="about-initials">AJ</span>
+              </div>
+            </div>
+            <div class="image-decoration">
+              <span class="deco-dot dot-tl"></span>
+              <span class="deco-dot dot-br"></span>
+            </div>
+          </div>
+
+          <!-- Right: text -->
+          <div class="about-text fade-in-right">
+            <h3>I'm <span class="gradient-text">Alex Johnson</span></h3>
+            <p class="about-bio">
+              I'm a passionate Computer Science student and aspiring software developer with a love for building things
+              that live on the internet. I enjoy creating beautiful, functional, and accessible web experiences that
+              make people's lives easier.
+            </p>
+            <p class="about-bio">
+              When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or
+              sipping coffee while sketching out the next big idea.
+            </p>
+
+            <!-- Details grid -->
+            <div class="details-grid">
+              <div class="detail-item">
+                <i class="fas fa-user" aria-hidden="true"></i>
+                <div><span class="detail-label">Name</span><span class="detail-value">Alex Johnson</span></div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-birthday-cake" aria-hidden="true"></i>
+                <div><span class="detail-label">Age</span><span class="detail-value">21 years</span></div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <div><span class="detail-label">Email</span><span class="detail-value">alex@example.com</span></div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <div><span class="detail-label">Location</span><span class="detail-value">New York, USA</span></div>
+              </div>
+            </div>
+
+            <!-- Education card -->
+            <div class="education-card fade-in">
+              <div class="edu-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+              <div class="edu-info">
+                <h4>Bachelor of Computer Science</h4>
+                <p>State University &nbsp;·&nbsp; 2022 – 2026</p>
+              </div>
+            </div>
+
+            <!-- Interests -->
+            <div class="interests">
+              <h4>Career Interests</h4>
+              <div class="interest-tags">
+                <span class="tag"><i class="fas fa-globe"></i> Web Development</span>
+                <span class="tag"><i class="fas fa-mobile-alt"></i> Mobile Apps</span>
+                <span class="tag"><i class="fas fa-brain"></i> AI / ML</span>
+                <span class="tag"><i class="fab fa-github"></i> Open Source</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary mt-1">
+              <i class="fas fa-paper-plane"></i> Let's Connect
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS SECTION
+    ============================================================ -->
+    <section id="skills" class="skills" aria-label="Skills">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <h2>My <span class="gradient-text">Skills</span></h2>
+          <div class="heading-line"></div>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- Progress bars -->
+          <div class="progress-cols fade-in">
+            <div class="progress-col">
+              <div class="skill-progress" data-skill="HTML" data-percent="90">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-html5" aria-hidden="true"></i> HTML</span>
+                  <span class="skill-pct" aria-label="90 percent">0%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="HTML skill level">
+                  <div class="progress-fill" style="--target:90%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress" data-skill="CSS" data-percent="85">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                  <span class="skill-pct" aria-label="85 percent">0%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="CSS skill level">
+                  <div class="progress-fill" style="--target:85%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress" data-skill="JavaScript" data-percent="80">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-js-square" aria-hidden="true"></i> JavaScript</span>
+                  <span class="skill-pct" aria-label="80 percent">0%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="JavaScript skill level">
+                  <div class="progress-fill" style="--target:80%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-col">
+              <div class="skill-progress" data-skill="Python" data-percent="75">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-python" aria-hidden="true"></i> Python</span>
+                  <span class="skill-pct" aria-label="75 percent">0%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Python skill level">
+                  <div class="progress-fill" style="--target:75%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress" data-skill="Java" data-percent="70">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-java" aria-hidden="true"></i> Java</span>
+                  <span class="skill-pct" aria-label="70 percent">0%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Java skill level">
+                  <div class="progress-fill" style="--target:70%"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress" data-skill="React" data-percent="65">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-react" aria-hidden="true"></i> React</span>
+                  <span class="skill-pct" aria-label="65 percent">0%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="React skill level">
+                  <div class="progress-fill" style="--target:65%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill category cards -->
+          <div class="skill-cards">
+            <article class="skill-card fade-in">
+              <div class="skill-card-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+              <h3>Frontend</h3>
+              <div class="chip-row">
+                <span class="chip">HTML5</span>
+                <span class="chip">CSS3</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">React</span>
+                <span class="chip">Tailwind</span>
+              </div>
+            </article>
+
+            <article class="skill-card fade-in">
+              <div class="skill-card-icon"><i class="fas fa-server" aria-hidden="true"></i></div>
+              <h3>Backend</h3>
+              <div class="chip-row">
+                <span class="chip">Node.js</span>
+                <span class="chip">Python</span>
+                <span class="chip">Java</span>
+                <span class="chip">REST APIs</span>
+                <span class="chip">SQL</span>
+              </div>
+            </article>
+
+            <article class="skill-card fade-in">
+              <div class="skill-card-icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
+              <h3>Tools</h3>
+              <div class="chip-row">
+                <span class="chip">Git</span>
+                <span class="chip">GitHub</span>
+                <span class="chip">VS Code</span>
+                <span class="chip">Figma</span>
+                <span class="chip">Linux</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS SECTION
+    ============================================================ -->
+    <section id="projects" class="projects" aria-label="Projects">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <h2>My <span class="gradient-text">Projects</span></h2>
+          <div class="heading-line"></div>
+          <p class="section-subtitle">Things I've built</p>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="filter-row fade-in" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="java">Java</button>
+        </div>
+
+        <!-- Project cards grid -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <article class="project-card fade-in" data-category="web">
+            <div class="card-header grad-1">
+              <i class="fas fa-code" aria-hidden="true"></i>
+              <span class="category-badge">Web</span>
+            </div>
+            <div class="card-body">
+              <h3>Personal Portfolio Website</h3>
+              <p>A fully responsive portfolio website built to showcase projects, skills, and professional journey with
+                smooth animations.</p>
+              <div class="tech-tags">
+                <span class="tech">HTML</span><span class="tech">CSS</span><span class="tech">JavaScript</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn-card btn-demo" aria-label="Live Demo of Personal Portfolio Website"><i
+                  class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn-card btn-gh" aria-label="GitHub repository for Personal Portfolio Website"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="web">
+            <div class="card-header grad-2">
+              <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+              <span class="category-badge">Web</span>
+            </div>
+            <div class="card-body">
+              <h3>E-Commerce Platform</h3>
+              <p>A full-stack e-commerce solution with product catalog, cart management, user auth, and Stripe payment
+                integration.</p>
+              <div class="tech-tags">
+                <span class="tech">React</span><span class="tech">Node.js</span><span class="tech">MongoDB</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn-card btn-demo" aria-label="Live Demo of E-Commerce Platform"><i
+                  class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn-card btn-gh" aria-label="GitHub repository for E-Commerce Platform"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="web">
+            <div class="card-header grad-3">
+              <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+              <span class="category-badge">Web</span>
+            </div>
+            <div class="card-body">
+              <h3>Weather App</h3>
+              <p>Real-time weather application fetching data from OpenWeatherMap API, with 5-day forecast and
+                geolocation support.</p>
+              <div class="tech-tags">
+                <span class="tech">JavaScript</span><span class="tech">REST API</span><span class="tech">CSS</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn-card btn-demo" aria-label="Live Demo of Weather App"><i
+                  class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn-card btn-gh" aria-label="GitHub repository for Weather App"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="python">
+            <div class="card-header grad-4">
+              <i class="fas fa-calculator" aria-hidden="true"></i>
+              <span class="category-badge">Python</span>
+            </div>
+            <div class="card-body">
+              <h3>Student Grade Calculator</h3>
+              <p>CLI tool to calculate GPA, track grades per subject, and generate student performance reports with data
+                visualisation.</p>
+              <div class="tech-tags">
+                <span class="tech">Python</span><span class="tech">Pandas</span><span class="tech">Matplotlib</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn-card btn-demo" aria-label="Live Demo of Student Grade Calculator"><i
+                  class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn-card btn-gh" aria-label="GitHub repository for Student Grade Calculator"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="java">
+            <div class="card-header grad-5">
+              <i class="fas fa-book" aria-hidden="true"></i>
+              <span class="category-badge">Java</span>
+            </div>
+            <div class="card-body">
+              <h3>Library Management System</h3>
+              <p>Desktop application for managing books, members, and borrowing records with search, fine calculation,
+                and reporting.</p>
+              <div class="tech-tags">
+                <span class="tech">Java</span><span class="tech">JavaFX</span><span class="tech">SQLite</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn-card btn-demo" aria-label="Live Demo of Library Management System"><i
+                  class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn-card btn-gh" aria-label="GitHub repository for Library Management System"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="web">
+            <div class="card-header grad-6">
+              <i class="fas fa-comments" aria-hidden="true"></i>
+              <span class="category-badge">Web</span>
+            </div>
+            <div class="card-body">
+              <h3>Chat Application</h3>
+              <p>Real-time chat app supporting multiple rooms, private messaging, file sharing, and emoji reactions via
+                WebSockets.</p>
+              <div class="tech-tags">
+                <span class="tech">WebSocket</span><span class="tech">JavaScript</span><span class="tech">Node.js</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn-card btn-demo" aria-label="Live Demo of Chat Application"><i
+                  class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn-card btn-gh" aria-label="GitHub repository for Chat Application"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+    ============================================================ -->
+    <section id="contact" class="contact" aria-label="Contact">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <h2>Get In <span class="gradient-text">Touch</span></h2>
+          <div class="heading-line"></div>
+          <p class="section-subtitle">I'd love to hear from you</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: info + socials -->
+          <div class="contact-info fade-in-left">
+            <p class="contact-intro">
+              Whether you have a project idea, want to collaborate, or just want to say hi — my inbox is always open!
+            </p>
+
+            <div class="info-cards">
+              <div class="info-card">
+                <div class="info-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:alex@example.com">alex@example.com</a>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Phone</h4>
+                  <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Location</h4>
+                  <span>New York, USA</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social links -->
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="GitHub profile">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="social-btn" aria-label="LinkedIn profile">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="social-btn" aria-label="Twitter profile">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="social-btn" aria-label="Instagram profile">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: form -->
+          <div class="contact-form-wrap fade-in-right">
+            <form id="contactForm" class="contact-form" novalidate aria-label="Contact form">
+
+              <div class="form-group">
+                <input type="text" id="name" name="name" class="form-input" placeholder=" " autocomplete="name" required
+                  aria-required="true" />
+                <label for="name" class="form-label">Your Name</label>
+                <span class="form-error" id="nameError" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="email" name="email" class="form-input" placeholder=" " autocomplete="email"
+                  required aria-required="true" />
+                <label for="email" class="form-label">Email Address</label>
+                <span class="form-error" id="emailError" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" id="subject" name="subject" class="form-input" placeholder=" " required
+                  aria-required="true" />
+                <label for="subject" class="form-label">Subject</label>
+                <span class="form-error" id="subjectError" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <textarea id="message" name="message" class="form-input form-textarea" placeholder=" " rows="5" required
+                  aria-required="true"></textarea>
+                <label for="message" class="form-label">Your Message</label>
+                <span class="form-error" id="messageError" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="#home" class="nav-logo" aria-label="Back to top">
+          <span class="logo-circle">AJ</span>
+          <span class="logo-name">Alex<span>Johnson</span></span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Alex Johnson. Crafted with <i class="fas fa-heart" aria-hidden="true"></i> and
+          lots of coffee.</p>
+        <a href="#home" class="back-top" id="backTop" aria-label="Back to top">
+          <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
